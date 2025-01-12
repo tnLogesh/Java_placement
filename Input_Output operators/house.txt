@@ -1,0 +1,37 @@
+5.Sara wished to build a new house but she didn't have a sufficient amount.
+So, she is planning to borrow some money from the bank on simple interest.
+When she is borrowing some money from the bank, she has to payback the original amount accompanied by a certin amount 
+of interest on that amount. She wants to find the interest for borrowed money within a certainperiod. Help her to find 
+the imple interest.
+
+Input format:
+The first line containing an integer value denoting the borrowed amount(principal aount)
+The second line containing an integer value denoting the period in years
+The third line containing the float alue denoting the rate of interest
+
+Output format:
+Print the simple interest in float with 2 decimal places.
+
+Program:
+
+import java.util.Scanner;
+
+class Simple_interest
+{
+    public static void main(String args[])
+    {
+        Scanner scanner=new Scanner(System.in);
+        int principal=scanner.nextInt();
+        int year=scanner.nextInt();
+        float rate=scanner.nextFloat();
+        float interest=(principal*year*rate)/100;
+        System.out.printf("%.2f",interest);
+    }
+}
+
+Output:
+
+15000
+2
+2.8
+840.00

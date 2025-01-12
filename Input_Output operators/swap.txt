@@ -1,0 +1,8 @@
+2.Write a java program to get 2 numbers from the user and swap their values without any loss of data.
+You can make useof additional variables for swapping.
+Print the corresponding swapped values of the two numbers as output in the console.
+Input format:
+First input: an integer
+Secont input: an integer
+Output format:
+The optput will be integers(swapped values)
