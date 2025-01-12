@@ -1,0 +1,22 @@
+1. Check if a given number is positive,negative or zero.
+
+Program:
+
+import java.util.Scanner;
+
+public class NumP {
+    public static void main(String dsa[])
+    {
+        Scanner a=new Scanner(System.in);
+        int num1=a.nextInt();
+        if(num1>=0){
+            System.out.println("The number is Positive");
+        }
+        else if(num1==0){
+            System.out.println("The number is Zero");
+        }
+        if(num1<=0){
+            System.out.println("The number is Negative");
+        }
+    }
+}

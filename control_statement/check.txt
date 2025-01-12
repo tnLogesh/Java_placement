@@ -1,0 +1,45 @@
+7. Check whether the given character is alphabert or number. If it is an alphbet check whether it is vowel or not a vowel.
+
+Program:
+
+import java.lang.Character;
+import java.util.*;
+class Check {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        char ch=s.next().charAt(0);
+        //int sr=(int)ch;
+        //System.out.println(ch);
+        char a= Character.toLowerCase(ch);
+        if(a>='a' && a<='z'){
+            System.out.println(a+" is letter");
+            if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){
+                System.out.println(a+" is vowel");
+            }
+        }
+        else{
+            System.out.println(a+" is number");
+        }
+
+    }
+}
+                        OR
+
+import java.util.*;
+class Character {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        char c=s.next().charAt(0);
+        if(c>=65&&c<97){
+            System.out.println("it is a capital letter");
+        }
+        else if(c>=97 && c<=122){
+            System.out.println("it is a small letter");
+        }
+        else if(c>=48 && c<65){
+            System.out.println("it is a digit");
+        }
+    }
+}

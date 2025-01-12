@@ -1,0 +1,19 @@
+2. Check if  a nuber is divisuble by 5 and 10.
+
+Program:
+
+import java.util.Scanner;
+
+public class Divisible {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int num=s.nextInt();
+        if(num%5==0&&num%10==0){
+            System.out.println(num+" is divisible by 5 & 1015");
+        }
+        else{
+            System.out.println(num+" is not divisible");
+        }
+    }
+}

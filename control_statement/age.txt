@@ -1,0 +1,22 @@
+8. Ask a user for their birth year encoded as two digits (like "62") and for the current year two digits (like "99").
+Write a program to fint the users current age.
+
+Program:
+
+import java.util.*;
+class Age {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int year=b-a;
+        int century=(100-a)+b;
+        if(b>a){
+            System.out.println(year);
+        }
+        else{
+            System.out.println(century);
+        }
+
+    }

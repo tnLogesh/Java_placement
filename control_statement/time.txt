@@ -1,0 +1,29 @@
+3. Check whether the given time is morning or afternoon or night.
+
+Program:
+
+import java.util.Scanner;
+class Time {
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        float time=s.nextFloat();
+            if (time >= 6 && time < 12) {
+                System.out.printf("%.2fam is morning", time);
+            }
+            else if (time >= 12 && time < 16) {
+                System.out.printf("%.2fpm is afternoon", time);
+            }
+            else if (time >= 16 && time < 19) {
+                System.out.printf("%.2fpm is evening", time);
+            }
+            else if (time >= 19 && time < 23) {
+                System.out.printf("%.2fpm is night", time);
+            }
+            else if (time <= 24 && time >= 23) {
+                System.out.printf("%.2fpm is midnight", time);
+            }
+            else if (time >= 1 && time < 6) {
+                System.out.printf("%.2fam is midnight", time);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+4. Check if a number is multiple of 3 but not 5.
+
+Program:
+
+import java.util.Scanner;
+
+public class Multiple {
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        int num=s.nextInt();
+        if(num%3==0&&num%5!=0){
+            System.out.println(num+" is multiple of 3 but not 5");
+        }
+        else{
+            System.out.println(num+" is not multiply");
+        }
+    }
+}
